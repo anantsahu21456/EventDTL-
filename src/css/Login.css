@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-image: url('../../public/backgroung.png');
+  background-size: cover;
+  background-position: center; */
+}
+
+.login-container {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 100%;
+  padding: 20px;
+  /* background-image: url('../../public/logo192.png');
+  background-size: cover;
+  background-position: center; */
+}
+
+.form-container {
+  padding: 20px;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.toggle-buttons .login-btn,
+.toggle-buttons .signup-btn {
+  flex: 1;
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.toggle-buttons .active {
+  background-color: #333;
+  color: #fff;
+  border-radius: 20px 20px 0 0;
+}
+
+.toggle-buttons .signup-btn {
+  background-color: #ddd;
+  border: none; /* This line removes the border */
+  border-radius: 0; /* This line resets the border-radius */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.password-toggle.visible {
+  color: #333;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.remember-forgot label {
+  font-size: 14px;
+}
+
+.forgot-password {
+  font-size: 14px;
+  color: #f06c63;
+  text-decoration: none;
+}
+
+.login-submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signup-redirect {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup-link {
+  color: #f06c63;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-login {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-login p {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  margin: 0 10px;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .login-container {
+      width: 90%;
+  }
+}
